@@ -1,37 +1,19 @@
-## Welcome to GitHub Pages
+## Mike McCarty
+### Software Engineer / Data Scientist
 
-You can use the [editor on GitHub](https://github.com/mmccarty/mmccarty.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+## What I Do
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Software
+I work with you to write the software you need today while engineering it to be testable and maintainable tomorrow.
 
-### Markdown
+### Data Engineering
+I build systems to either get your data to where it needs be for knowledge extraction or bring the compute power to your data.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Problem Solving
+I greatly enjoy applying my skill set to the problem domain in order to provide solutions that are essential to your daily life.
 
-```markdown
-Syntax highlighted code block
+## Quick Biography
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/mmccarty/mmccarty.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Since 2003, I have been providing custom solutions to an eclectic...
+## Projects
+## Long Biography
