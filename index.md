@@ -1,3 +1,5 @@
+![Mike]({{ site.url }}/assets/images/mike.jpg)
+
 ## What I Do
 
 ### Software
