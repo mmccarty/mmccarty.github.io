@@ -18,7 +18,7 @@ I greatly enjoy applying my skill set to the problem domain in order to provide 
 I worked on a [Big Data Business Intelligence tool](http://www.zoomdata.com).
 
 ### Centers for Medicare and Medicaid Services, TCPI
-I led and developed the data inject and analysis pipeline for [TCPI](https://innovation.cms.gov/initiatives/Transforming-Clinical-Practices/).
+I led and developed the data ingest and analysis pipeline for [TCPI](https://innovation.cms.gov/initiatives/Transforming-Clinical-Practices/).
 
 ### National Institute for Computational Sciences at Oak Ridge National Lab
 I worked in the High Performance Computing Operations group.
