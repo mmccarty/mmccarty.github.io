@@ -24,7 +24,7 @@ I led and developed the data ingest and analysis pipeline for [TCPI](https://inn
 I worked in the High Performance Computing Operations group, which supported the [Kraken](https://en.wikipedia.org/wiki/Kraken_(supercomputer)). The Kraken was the NSF's first PetaFLOP system and was the most powerful computer in the world managed by academia at the time. Specifically, I built a framework for automated regression testing of the system (McCarty et. al. 2010 as referenced in my CV).
 
 ### National Radio Astronomy Observatory
-I developed the [GBT DSS](https://science.nrao.edu/facilities/gbt/schedules/dynamic), worked on the [ALMA Front End Test and Measurement System](https://science.nrao.edu/facilities/cdl/alma-support), and discovered a [pulsar]({{ site.url }}/assets/images/Ter5ae_DSP_discovery.ps).
+I developed the [GBT DSS](https://science.nrao.edu/facilities/gbt/schedules/dynamic), worked on the [ALMA Front End Test and Measurement System](https://science.nrao.edu/facilities/cdl/alma-support), and discovered a [pulsar]({{ site.url }}/assets/images/SPIGOT_Ter5_050505_PSR_1748-24ae.pfd.ps).
 
 ### Open Source Contributions
 In the spirt of getting back to my roots, I have started contributing to [AstroPy](https://github.com/astropy/astropy). A community effort to develop a single core package for Astronomy in Python and foster interoperability between Python astronomy packages.
