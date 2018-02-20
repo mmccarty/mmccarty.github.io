@@ -3,8 +3,11 @@ Twelve years of software development experience in scientific computing at multi
 
 ### Experience
 
+#### [Anaconda, Inc](http://www.anaconda.com), *Remote VA*
+October 2017 - Present: Senior Software Engineer
+
 #### [Zoomdata](http://www.zoomdata.com), *Reston, VA*
-September 2016 - Present: Senior Software Engineer / Tech Lead
+September 2016 - October 2017: Senior Software Engineer / Tech Lead
 * Developed and maintained Zoomdata, a Big Data Business Intelligence tool that is capable of connecting to modern data sources for visualization
 * Led Application Platform development team, consisting of 6 engineers.
 * Full stack software development using Java, Spring, Backbone, React, Postgres and Spark.
