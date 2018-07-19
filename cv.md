@@ -4,21 +4,24 @@ Twelve years of software development experience in scientific computing at multi
 ### Experience
 
 #### [Anaconda, Inc](http://www.anaconda.com), *Remote VA*
-October 2017 - Present: Senior Software Engineer
+October 2017 - Present: Technical Consultant / Software Engineer
+* Platform engineer on Anaconda Enterprise 5
+* Open Source developer on data science and machine learning projects.
+* Technical consultant for customers in the government, scientific research, and financial industries.
+
+#### [Morehead State University](http://moreheadstate.edu), *Morehead, KY*
+March 2016 - Present: Chairman of Advisory Board for the Department of Mathematics and Physics
 
 #### [Zoomdata](http://www.zoomdata.com), *Reston, VA*
-September 2016 - October 2017: Senior Software Engineer / Tech Lead
+September 2016 - October 2017: Senior Software Engineer / Technical Lead
 * Developed and maintained Zoomdata, a Big Data Business Intelligence tool that is capable of connecting to modern data sources for visualization
 * Led Application Platform development team, consisting of 6 engineers.
 * Full stack software development using Java, Spring, Backbone, React, Postgres and Spark.
 * Developed features and bug fixes for Big Data Business Intelligence Software
 * Principle engineer on project to rebuild the front end UI using Angular v4
 
-#### [Morehead State University](http://moreheadstate.edu), *Morehead, KY*
-March 2016 - Present: Chairman of Advisory Board for the Department of Mathematics and Physics
-
 #### [Booz Allen Hamilton](http://www.bah.com), *Washington, DC*
-March 2016 - September 2016: Associate / Senior Software Engineer
+March 2016 - September 2016: Lead Engineer
 
 * Led development of data management, ingest, analysis, and visualization
 * Directed DevOps activities (Chef, Continuous Integration, Infrastructure Systems) on AWS
@@ -63,18 +66,14 @@ January 2013 – November 2013: Senior Software Engineer
 * Developed and maintained open source Content Management System built for libraries
 
 #### [National Radio Astronomy Observatory](http://www.nrao.edu), *Green Bank, WV*
-October 2006 – August 2009
-* March 2010 – January 2013: Green Bank Telescope (GBT) Software Development Division Software Engineer
+September 2010 – January 2013: Green Bank Telescope (GBT) Software Development Division Software Engineer
 * Developed GBT Proposal Handling Tool
 * Developed the GBT Dynamic Scheduling System for the telescope, which schedules astronomical observations based on weather forecasts to optimize overall quality of scientific research (1000+ users).
-* Developed the Business Office System for managing visitor contact information, reservations to the Observatory residence hall, and invoicing.
 * Continuing development of the GBT Monitor and Control System and Observers Interface.
-* Played a key role in all aspects of the software development lifecycle.
 * Technical lead on proposal writing for machine learning applications in radio astronomy data analysis, in collaboration with NASA JPL.
-* The GBT is the world’s largest fully steerable telescope with a 100 x 110 meter primary mirror.
 
 #### [National Institute for Computational Sciences](http://www.nics.tennessee.edu), *Oak Ridge, TN*
-September 2009 – August 2010: HPC Operations Group Systems Programmer
+August 2009 – August 2010: HPC Operations Group Systems Programmer
 * Worked on the Kraken, a Cray XT5 and the first academic petaflop system funded by the National Science Foundation. At that time, the Kraken was number 3 on the top 500 list of the fastest supercomputers in the world.
 * Developed software to support HPC systems operations.  
 * Created an automated regression-testing framework for Cray XT systems.
@@ -82,6 +81,12 @@ September 2009 – August 2010: HPC Operations Group Systems Programmer
 * Assisted with HPC system job scheduling implementation and CPU hour accounting (TORQUE, Moab, and Gold).
 * Served as a database administrator.
 * Applied skills to HPC application and system performance testing.
+
+#### [National Radio Astronomy Observatory](http://www.nrao.edu), *Green Bank, WV*
+October 2006 – August 2009: Green Bank Telescope (GBT) Software Development Division Software Engineer
+* Developed the GBT Dynamic Scheduling System for the telescope, which schedules astronomical observations based on weather forecasts to optimize overall quality of scientific research (1000+ users).
+* Developed the Business Office System for managing visitor contact information, reservations to the Observatory residence hall, and invoicing.
+* Continuing development of the GBT Monitor and Control System and Observers Interface.
 
 #### [National Radio Astronomy Observatory](http://www.nrao.edu), *Charlottesville, VA*
 May 2005 – September 2006: ALMA Front End Integration Group - Software Engineer
