@@ -3,14 +3,20 @@ Twelve years of software development experience in scientific computing at multi
 
 ### Experience
 
+#### [Capital One](http://www.capitalone.com), McLean, VA
+July 2019 - Present: Director, Distinguished Engineer
+
+October 2018 - June 2019: Senior Manager, Lead Software Engineer
+* Center for Machine Learning
+
 #### [Anaconda, Inc](http://www.anaconda.com), *Remote VA*
-October 2017 - Present: Technical Consultant / Software Engineer
+October 2017 - October 2018: Client Facing Software Engineer / Platform Engineer
 * Platform engineer on Anaconda Enterprise 5
 * Open Source developer on data science and machine learning projects.
 * Technical consultant for customers in the government, scientific research, and financial industries.
 
 #### [Morehead State University](http://moreheadstate.edu), *Morehead, KY*
-March 2016 - Present: Chairman of Advisory Board for the Department of Mathematics and Physics
+March 2016 - April 2018: Chairman of Advisory Board for the Department of Mathematics and Physics
 
 #### [Zoomdata](http://www.zoomdata.com), *Reston, VA*
 September 2016 - October 2017: Senior Software Engineer / Technical Lead
