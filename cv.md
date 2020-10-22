@@ -1,3 +1,7 @@
+---
+layout: default
+title: CV
+---
 ### Summary
 Twelve years of software development experience in scientific computing at multiple national labs and in private industry. Holds a proven track record for trail blazing in unknown territory. Repeatedly demonstrates leadership by driving technology and architectural choices on new projects. A software engineer that is motivated and capable of learning new skills and applying them directly to the problem domain.
 
