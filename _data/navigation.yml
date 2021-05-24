@@ -1,8 +1,8 @@
 - name: Home
   link: /
-- name: Bio
-  link: /bio.html
-- name: Work
-  link: /work.html
+- name: About Me
+  link: /about.html
+- name: Talks
+  link: /talks.html
 - name: CV
-  link: /cv.html
+  link: https://github.com/mmccarty/cv/blob/master/mmccarty-cv.pdf

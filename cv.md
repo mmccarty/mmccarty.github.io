@@ -1,17 +1,31 @@
 ---
 layout: default
-title: CV
+title: About
 ---
 ### Summary
-Twelve years of software development experience in scientific computing at multiple national labs and in private industry. Holds a proven track record for trail blazing in unknown territory. Repeatedly demonstrates leadership by driving technology and architectural choices on new projects. A software engineer that is motivated and capable of learning new skills and applying them directly to the problem domain.
+Experienced engineer focused on building Data Science and Machine Learning tools, web services, and cloud computing resources. Solid background in scientific computing, software engineering, leadership, and mentoring.
 
 ### Experience
 
-#### [Capital One](http://www.capitalone.com), McLean, VA
-July 2019 - Present: Director, Distinguished Engineer
+#### [Prefect](http://www.prefect.io), Washington, DC
+Jan 2020 - Present: Advisory Board Member
 
-October 2018 - June 2019: Senior Manager, Lead Software Engineer
-* Center for Machine Learning
+#### [Capital One](http://www.capitalone.com) - Center for Machine Learning, McLean, VA
+July 2019 - Present: Director of Software Engineering <br/>
+October 2018 - July 2019: Senior Manager, Lead Software Engineer
+* Drove adoption of Dask and RAPIDS throughout the enterprise leading to
+  * 10-100x computational improvement for model training and predictions
+  * Scaled train datasets 2 orders of magnitude
+* Led organization building and maintaining custom machine learning tools for the enterprise
+* Managed 4 product teams composed of 15 software engineers
+* Model Risk Office Engineering Validation
+* Machine Learning Platform Architecture Counsel
+* Technical Advisory Counsel
+* Subject matter expert for the PyData and Scipy software stacks
+* Mentored and educated DS/ML practioners and engineers throughout the company
+* Developed and managed relationships with external partners
+* Championed open source development
+* Contributed to open source projects (Dask, RAPIDS, XGBoost)
 
 #### [Anaconda, Inc](http://www.anaconda.com), *Remote VA*
 October 2017 - October 2018: Client Facing Software Engineer / Platform Engineer
