@@ -14,15 +14,6 @@ and two sisters. All of my siblings were older and many even had families of
 their own, which meant that I was fortunate to have grown up in a large family,
 and as the cool uncle.
 
-My mother was a graduate from the University of Kentucky and taught children
-with special-needs. Shortly after I arrived, she retired due to illness, however
-she would often work as a substitute teacher, and, of course, care for me. My
-father served in the US Army during the Vietnam War, where he learned to speak
-Vietnamese. Later, while stationed in Alaska, he led one of the first rescue
-teams into Valdez after the great earthquake in 1964. After the he left the
-military, he worked tireless at a steal plant for 30 years to provide for the
-family. He loved the outdoors and especially fishing.
-
 ## Academic and Early Career
 I attended university at Morehead State University in the department of Math
 and Physics where I received a dual degree in Computer Science and Physics.
