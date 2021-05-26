@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+  <head>
+    <!-- Basic Page Needs
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>Time for a Change</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="/assets/css/normalize.css">
+    <link rel="stylesheet" href="/assets/css/skeleton.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.11.2/css/all.min.css"
+    integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ="
+    crossorigin="anonymous">
+
+    <!-- Favicon
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  </head>
+  <body>
+    <!-- Primary Page Layout
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="container">
+        <div class="row">
+            <div class="column" style="margin-top: 5%">
+                <h2>Mike McCarty - Blog</h2>
+                <hr/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="two columns">
+              <nav>
+    
+      <a href="/" >Home</a><br/>
+    
+      <a href="/about.html" >About Me</a><br/>
+    
+      <a href="/blog.html" >Blog</a><br/>
+    
+      <a href="/talks.html" >Talks</a><br/>
+    
+      <a href="https://github.com/mmccarty/cv/blob/master/mmccarty-cv.pdf" >CV</a><br/>
+    
+    <hr/>
+    <div class="center">
+      <a href="mailto:mm@mikemccarty.io"><i class="fas fa-envelope"></i></a>
+      <a href="https://github.com/mmccarty"><i class="fab fa-github"></i></a>
+      <a href="https://twitter.com/mikemccarty_"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.linkedin.com/in/mikemccarty/"><i class="fab fa-linkedin"></i></a>
+    </div>
+</nav>
+            </div>
+            <div class="ten columns">
+              <h2>Time for a Change </h2>
+              <p class="article-date">Posted on: 26 May 2021</p>
+              <p>Last Friday was my last day at Capital One. I will miss all of the wonderful
+people that I had the fortune to work with over the past few years. Next week I
+will be joining the Product team at NVIDIA to focus on Python Developer tools.</p>
+
+<p>One habbit that I’ve picked up during my time a Capital One that I intend to
+keep is blogging. I’ll start by taking a look back on a few things.</p>
+
+<h3 id="dask">Dask</h3>
+
+<p>When I joined Capital One over two and a half years ago, I was happy to find a
+few Dask users had managed to deploy clusters on a few of the internal
+infrastructure systems, however it wasn’t widely adopted. In fact, a few Python
+model training pipelines were scaled vertically on larger cloud instances. These
+pipeline swere taking days to run, but the developers wanted to stick with the
+PyData stack. This was an opportunity for Dask so I started a side project to
+evangelize it at the company. I began giving tutorials to education others on
+how the library could help them scale their workflows. Eventually, I was
+managing a team of Dask developers and my side project suddenly became one of my
+primary duties. We built an internal community of hundreds of Dask users,
+contributed to the public project, gave public and internal talks about our
+work, training hundreds of data scientists, and even built our own libraries on
+top of Dask.</p>
+
+<h3 id="rapids">RAPIDS</h3>
+
+<p>A few months into my time at Capital One, the Center for Machine Learning formed
+a partnership with the RAPIDS team at NVIDIA. Our goal was to be early testers,
+provide feedback, and contribute. Again, deployments were a huge challenge,
+however we managed to usher the suite of conda packages and system level
+dependencies through the cloud governance policies. Before long we were testing
+multi-node, multi-GPU computing workflows and felt the bounds of network
+limitations on the cloud. A nice place to be! Additionally, we were on the front
+lines of beta users for the incorporation of native Dask support and GPU
+acceleration into XGBoost. Lack of efficient GPU development environments
+limited our code contributions to the project and ability to support GPU
+computing in our internal libraries. My advice is to just build a workstation
+and throw a GPU card in it, but even that can be a challenge for a financial
+institution.</p>
+
+<h3 id="rubicon">Rubicon</h3>
+
+<p>I was originally hired to lead the Rubicon team, although back
+then it had a completely different architecture that was based on gRPC. We went
+through a few major architectural overhaws and eventually landed on a
+simplified design that could be open sourced without the need for custom
+services. At the same time, we realized how making Rubicon a “serverless”
+library, built on top of
+<a href="https://filesystem-spec.readthedocs.io/en/latest/">fsspec</a>, could dramatically
+reduce our operational burden. I look forward to seeing how the project evolves
+and hope it grows in the PyData community.</p>
+
+<h3 id="remote-work-during-a-pandemic">Remote Work During a Pandemic</h3>
+
+<p>The last fifteen months of working remotely have had its ups and downs. For one,
+my home office has had a few major upgrades! I must say that I am so proud of
+the team for seamlessly transitioning to being remote full time last year. I
+have often stopped to think about how amazing it was to see so many families
+pressing on as best as they can during the pandemic. Blurred lines between home
+and work, and back-to-back Zoom calls all day, have left me feeling burned out
+on a few occasions. Everyone, please remember to take breaks and go for a quick
+walk a few times during the day. It is easy to sit at your desk for way too long!</p>
+
+<h3 id="being-a-middle-aged-programmer-in-2020">Being a Middle Aged Programmer in 2020</h3>
+
+<p>Building enginneering teams is a lot of fun! Running them is not always as much
+fun, but still pretty neat! As a Director at Capital One, I was constantly asked
+if I was manager or individual contributor (IC). I would say, “both” or “it
+depends on the day.” As time wore on, I would spend less time thinking about
+code and more time thinking about people who wrote the code. And that was fine
+as long as I remained close to the users. Over time, I felt more like a
+technical product manager than an engineer. When I started talking to the
+Product team at NVIDIA, it was a natural fit!</p>
+
+<p>Being a Director of Software Engineering was all very interesting and I may do
+it again someday, but I don’t think the path I was on is the only one for this
+middle aged programmer. It seems to me that the path I’m about to walk–in the
+traversal of tree of life in this profession–should be explored given that
+there will be even more middle aged programmers in the not to distant future.
+Perhaps more on this later.</p>
+
+<h3 id="whats-next">What’s Next?</h3>
+
+<p>I’m extremely excited to join NVIDIA and help drive the acceleration of the
+Python ecosystem. The Python community is amazing and the work has been very
+rewarding. For now, I’ll be managing products rather than engineers. And perhaps
+some mischief from time to time. We will see how it goes.</p>
+
+            </div>
+        </div>
+    </div>
+  </body>
+</html>

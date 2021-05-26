@@ -2,6 +2,8 @@
   link: /
 - name: About Me
   link: /about.html
+- name: Blog
+  link: /blog.html
 - name: Talks
   link: /talks.html
 - name: CV
