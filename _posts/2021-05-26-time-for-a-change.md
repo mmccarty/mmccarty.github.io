@@ -4,7 +4,7 @@ title: "Time for a Change"
 ---
 
 Last Friday was my last day at Capital One. I will miss all of the wonderful
-people that I had the fortune to work with over the past few years. Next week I
+people that I had the fortune of working with over the past few years. Next week I
 will be joining the Product team at NVIDIA to focus on Python Developer tools.
 
 One hobby that I picked up during my time a Capital One that I intend to keep is
