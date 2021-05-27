@@ -21,11 +21,11 @@ model training pipelines were scaled vertically on larger cloud instances. These
 pipelines would take days to run, but the developers wanted to stick with the
 PyData stack. This was an opportunity for Dask, so I started a side project to
 evangelize it at the company. I began advising teams and giving [Dask
-tutorials](https://github.com/dask/dask-tutorial) to education others on how the
+tutorials](https://github.com/dask/dask-tutorial) to educate others on how the
 library could help them scale their workflows. Eventually, I was managing a team
 of Dask developers and my side project suddenly became one of my primary duties.
 We built an internal community of hundreds of Dask users, contributed to the
-public project, gave public and internal talks about our work, training hundreds
+public project, gave public and internal talks about our work, trained hundreds
 of data scientists, and even built our own libraries on top of Dask.
 
 ### RAPIDS
@@ -66,7 +66,7 @@ and hope it grows in the PyData community.
 
 ### Remote Work During a Pandemic
 
-The last fifteen months of working remote during the pandemic have had its ups
+The last fifteen months of working remotely during the pandemic have had its ups
 and downs. For one, my home office has had a few major upgrades! I must say that
 I am so proud of the team for seamlessly transitioning to being remote full time
 last year. I have often stopped to think about how amazing it was to see so many
@@ -79,7 +79,7 @@ at NVIDIA.
 
 ### Being a Middle Aged Programmer
 
-Building enginneering teams is a lot of fun! Running them is not always as much
+Building engineering teams is a lot of fun! Running them is not always as much
 fun, but still pretty neat! As a Director at Capital One, I was constantly asked
 if I was manager or individual contributor (IC). I would say, "both" or "it
 depends on the day." As time wore on, I would spend less time thinking about
@@ -92,7 +92,7 @@ Being a Director of Software Engineering was all very interesting and I may do
 it again someday, but I don't think the path I was on is the only one for this
 middle aged programmer. It seems to me that the path I'm about to walk--in the
 traversal of the tree of life in this profession--should be explored given that
-there will be even more middle aged programmers in the not to distant future.
+there will be even more middle aged programmers in the not too distant future.
 Perhaps more on this later.
 
 ### What's Next?
