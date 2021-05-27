@@ -8,7 +8,7 @@ people that I had the fortune of working with over the past few years. Next week
 will be joining the Product team at NVIDIA to focus on Python Developer tools.
 
 One hobby that I picked up during my time at Capital One that I intend to keep is
-[writting](https://medium.com/capital-one-tech/custom-machine-learning-estimators-at-scale-on-dask-rapids-e2b9519a6d1f)
+[writing](https://medium.com/capital-one-tech/custom-machine-learning-estimators-at-scale-on-dask-rapids-e2b9519a6d1f)
 [articles](https://medium.com/capital-one-tech/dask-and-rapids-the-next-big-things-for-data-science-and-machine-learning-at-capital-one-d4bba136cc70).
 Let's start by taking a look back on a few things.
 
