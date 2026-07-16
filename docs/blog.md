@@ -4,4 +4,4 @@ title: Blog
 
 ### Latest Posts
 
-No posts yet.
+- [Test Post](blog/2026/07/16/test-post.md)

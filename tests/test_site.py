@@ -76,9 +76,26 @@ class SiteBuildTests(unittest.TestCase):
         self.assertNotIn("Time for a Change", html)
         self.assertNotIn("May 26, 2021", html)
 
+    def test_blog_lists_the_test_post(self) -> None:
+        html = (self.site_dir / "blog.html").read_text(encoding="utf-8")
+
+        self.assertIn('href="blog/2026/07/16/test-post.html"', html)
+        self.assertIn("Test Post", html)
+
     def test_blog_post_output_is_removed(self) -> None:
         self.assertFalse(
             (self.site_dir / "2021/05/26/time-for-a-change.html").exists()
+        )
+
+    def test_test_post_is_generated_by_the_blog_plugin(self) -> None:
+        post_path = self.site_dir / "blog/2026/07/16/test-post.html"
+        self.assertTrue(post_path.is_file())
+
+        html = post_path.read_text(encoding="utf-8")
+        self.assertIn("Test Post", html)
+        self.assertIn(
+            "This is a test post for verifying the MkDocs blog plugin.",
+            html,
         )
 
     def test_rendered_html_contains_no_jekyll_syntax(self) -> None:

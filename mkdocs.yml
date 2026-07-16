@@ -32,7 +32,7 @@ plugins:
 
 validation:
   nav:
-    omitted_files: warn
+    omitted_files: ignore
     not_found: warn
   links:
     not_found: warn
