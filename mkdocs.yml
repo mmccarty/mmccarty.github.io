@@ -1,0 +1,50 @@
+site_name: Mike McCarty
+site_description: Software Engineering, Python, Data Science, Polyglot Programming
+site_author: Mike McCarty
+site_url: https://mikemccarty.io/
+
+docs_dir: docs
+site_dir: site
+use_directory_urls: false
+strict: true
+
+theme:
+  name: mkdocs
+  custom_dir: overrides
+
+nav:
+  - Home: index.md
+  - About Me: about.md
+  - Blog: blog.md
+  - Talks: talks.md
+  - CV: https://github.com/mmccarty/cv/blob/master/mmccarty-cv.pdf
+
+not_in_nav: |
+  /2021/
+  /cv.md
+  /work.md
+
+exclude_docs: |
+  /superpowers/
+
+hooks:
+  - blog.py
+
+plugins: []
+
+validation:
+  nav:
+    omitted_files: warn
+    not_found: warn
+  links:
+    not_found: warn
+    anchors: warn
+    unrecognized_links: warn
+
+extra:
+  analytics_id: G-94RENSJC31
+  social:
+    email: mailto:mm@mikemccarty.io
+    github: https://github.com/mmccarty
+    twitter: https://twitter.com/mikemccarty_
+    linkedin: https://www.linkedin.com/in/mikemccarty/

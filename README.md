@@ -1,30 +1,55 @@
-# Dev Setup
+# mikemccarty.io
 
-``` shell
-brew install ruby
-brew install rbenv
+This repository contains the MkDocs source for
+[mikemccarty.io](https://mikemccarty.io). Python and MkDocs are managed with
+[`uv`](https://docs.astral.sh/uv/).
 
-rbenv init
-echo 'eval "$(rbenv init -)"' >>~/.bash_profile
+## Local development
 
-rbenv install 2.7.0
-rbenv global 2.7.0
+Install `uv`, then create the locked environment:
 
-gem install --user-install bundler jekyll
-
-echo 'export PATH="$HOME/.gem/ruby/2.7.0/bin:$PATH"' >>~/.bash_profile
-
-gem env
-
-bundle install
-
+```shell
+uv sync --locked
 ```
 
+Start the local development server:
 
-# Run Locally
-
-``` shell
-bundle exec jekyll serve
-
+```shell
+uv run mkdocs serve
 ```
 
+Build the site with the same strict validation used in CI:
+
+```shell
+uv run --locked mkdocs build --strict
+```
+
+The generated site is written to `site/` and is not committed.
+
+## Content
+
+Pages and static assets live in `docs/`. The custom template that preserves the
+site's original appearance lives in `overrides/main.html`.
+
+Blog posts use dated source paths and require this metadata:
+
+```yaml
+---
+title: Post title
+post: true
+date: 2026-07-16
+---
+```
+
+The local `blog.py` MkDocs hook validates post metadata and generates the list
+on `docs/blog.md` from the `<!-- BLOG_POSTS -->` marker.
+
+## Deployment
+
+GitHub Actions builds and deploys the site after pushes to `gh-pages`. In the
+repository's Pages settings, set the publishing source to **GitHub Actions**.
+The workflow installs the environment from `uv.lock`, runs a strict MkDocs
+build, and deploys the resulting Pages artifact.
+
+The custom domain remains configured as `mikemccarty.io` through `docs/CNAME`
+and the repository's GitHub Pages settings.
