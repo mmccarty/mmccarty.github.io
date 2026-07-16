@@ -5,6 +5,7 @@ description = "Source for mikemccarty.io"
 requires-python = ">=3.12"
 dependencies = [
     "mkdocs>=1.6.1,<2",
+    "mkdocs-blog-plugin>=0.25,<1",
 ]
 
 [tool.uv]

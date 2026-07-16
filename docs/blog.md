@@ -1,6 +1,7 @@
 ---
 title: Blog
 ---
+
 ### Latest Posts
 
-<!-- BLOG_POSTS -->
+No posts yet.

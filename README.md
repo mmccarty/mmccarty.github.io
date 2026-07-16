@@ -31,18 +31,20 @@ The generated site is written to `site/` and is not committed.
 Pages and static assets live in `docs/`. The custom template that preserves the
 site's original appearance lives in `overrides/main.html`.
 
-Blog posts use dated source paths and require this metadata:
+Blog posts are managed by `mkdocs-blog-plugin`. Add posts under dated paths in
+`docs/blog/`, for example:
+
+```text
+docs/blog/2026/07/16/post-title.md
+```
+
+Each post should include at least a title:
 
 ```yaml
 ---
 title: Post title
-post: true
-date: 2026-07-16
 ---
 ```
-
-The local `blog.py` MkDocs hook validates post metadata and generates the list
-on `docs/blog.md` from the `<!-- BLOG_POSTS -->` marker.
 
 ## Deployment
 

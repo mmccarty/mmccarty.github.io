@@ -134,10 +134,14 @@ version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
     { name = "mkdocs" },
+    { name = "mkdocs-blog-plugin" },
 ]
 
 [package.metadata]
-requires-dist = [{ name = "mkdocs", specifier = ">=1.6.1,<2" }]
+requires-dist = [
+    { name = "mkdocs", specifier = ">=1.6.1,<2" },
+    { name = "mkdocs-blog-plugin", specifier = ">=0.25,<1" },
+]
 
 [[package]]
 name = "mkdocs"
@@ -162,6 +166,12 @@ sdist = { url = "https://files.pythonhosted.org/packages/bc/c6/bbd4f061bd16b3782
 wheels = [
     { url = "https://files.pythonhosted.org/packages/22/5b/dbc6a8cddc9cfa9c4971d59fb12bb8d42e161b7e7f8cc89e49137c5b279c/mkdocs-1.6.1-py3-none-any.whl", hash = "sha256:db91759624d1647f3f34aa0c3f327dd2601beae39a366d6e064c03468d35c20e", size = 3864451, upload-time = "2024-08-30T12:24:05.054Z" },
 ]
+
+[[package]]
+name = "mkdocs-blog-plugin"
+version = "0.25"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/a4/de/cd98844ffa535f3d56d78437ecdf0c351d486f91933683f926dfac15b149/mkdocs-blog-plugin-0.25.tar.gz", hash = "sha256:36dcd804f6ab1314d19c32e46bf21076d5f4425e1bca22f2e735b9b4baaec836", size = 6117, upload-time = "2020-04-13T08:07:03.446Z" }
 
 [[package]]
 name = "mkdocs-get-deps"

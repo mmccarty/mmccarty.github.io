@@ -20,17 +20,15 @@ nav:
   - CV: https://github.com/mmccarty/cv/blob/master/mmccarty-cv.pdf
 
 not_in_nav: |
-  /2021/
   /cv.md
   /work.md
 
 exclude_docs: |
   /superpowers/
 
-hooks:
-  - blog.py
-
-plugins: []
+plugins:
+  - blog:
+      folder: blog
 
 validation:
   nav:

@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-import importlib
 import shutil
 import subprocess
 import tempfile
@@ -9,78 +8,6 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-
-
-class BlogHookTests(unittest.TestCase):
-    def _write_post(
-        self,
-        docs_dir: Path,
-        relative_path: str,
-        *,
-        title: str | None,
-        date: str,
-    ) -> None:
-        path = docs_dir / relative_path
-        path.parent.mkdir(parents=True, exist_ok=True)
-        title_line = "" if title is None else f'title: "{title}"\n'
-        path.write_text(
-            f"---\npost: true\n{title_line}date: {date}\n---\n\nPost body.\n",
-            encoding="utf-8",
-        )
-
-    def test_load_posts_sorts_newest_first_and_formats_dates(self) -> None:
-        blog = importlib.import_module("blog")
-
-        with tempfile.TemporaryDirectory() as directory:
-            docs_dir = Path(directory)
-            self._write_post(
-                docs_dir,
-                "2021/05/26/older.md",
-                title="Older",
-                date="2021-05-26",
-            )
-            self._write_post(
-                docs_dir,
-                "2024/01/02/newer.md",
-                title="Newer",
-                date="2024-01-02",
-            )
-
-            posts = blog.load_posts(docs_dir)
-
-        self.assertEqual([post.title for post in posts], ["Newer", "Older"])
-        self.assertEqual(posts[0].formatted_date, "Jan 02, 2024")
-        self.assertEqual(posts[0].source_uri, "2024/01/02/newer.md")
-
-    def test_load_posts_rejects_a_missing_title(self) -> None:
-        blog = importlib.import_module("blog")
-
-        with tempfile.TemporaryDirectory() as directory:
-            docs_dir = Path(directory)
-            self._write_post(
-                docs_dir,
-                "2024/01/02/untitled.md",
-                title=None,
-                date="2024-01-02",
-            )
-
-            with self.assertRaisesRegex(ValueError, "untitled.md.*title"):
-                blog.load_posts(docs_dir)
-
-    def test_load_posts_rejects_an_invalid_date(self) -> None:
-        blog = importlib.import_module("blog")
-
-        with tempfile.TemporaryDirectory() as directory:
-            docs_dir = Path(directory)
-            self._write_post(
-                docs_dir,
-                "2024/01/02/bad-date.md",
-                title="Bad date",
-                date="January 2",
-            )
-
-            with self.assertRaisesRegex(ValueError, "bad-date.md.*ISO date"):
-                blog.load_posts(docs_dir)
 
 
 class SiteBuildTests(unittest.TestCase):
@@ -195,6 +122,16 @@ class ProjectConfigurationTests(unittest.TestCase):
             with self.subTest(command=command):
                 self.assertIn(command, readme)
         self.assertIn("GitHub Actions", readme)
+
+    def test_blog_uses_mkdocs_blog_plugin(self) -> None:
+        mkdocs_config = (ROOT / "mkdocs.yml").read_text(encoding="utf-8")
+        project_config = (ROOT / "pyproject.toml").read_text(encoding="utf-8")
+
+        self.assertIn("mkdocs-blog-plugin", project_config)
+        self.assertIn("- blog:", mkdocs_config)
+        self.assertNotIn("hooks:", mkdocs_config)
+        self.assertFalse((ROOT / "blog.py").exists())
+        self.assertTrue((ROOT / "docs/blog/.gitkeep").is_file())
 
     def test_generated_outputs_are_not_tracked(self) -> None:
         result = subprocess.run(
