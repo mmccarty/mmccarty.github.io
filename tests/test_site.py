@@ -125,7 +125,6 @@ class SiteBuildTests(unittest.TestCase):
             "talks.html",
             "cv.html",
             "work.html",
-            "2021/05/26/time-for-a-change.html",
             "assets/css/normalize.css",
             "assets/css/skeleton.css",
             "assets/css/styles.css",
@@ -143,22 +142,17 @@ class SiteBuildTests(unittest.TestCase):
             "mikemccarty.io",
         )
 
-    def test_blog_lists_the_post_and_date(self) -> None:
+    def test_blog_omits_the_removed_post(self) -> None:
         html = (self.site_dir / "blog.html").read_text(encoding="utf-8")
 
-        self.assertIn('href="2021/05/26/time-for-a-change.html"', html)
-        self.assertIn("Time for a Change", html)
-        self.assertIn("May 26, 2021", html)
+        self.assertNotIn('href="2021/05/26/time-for-a-change.html"', html)
+        self.assertNotIn("Time for a Change", html)
+        self.assertNotIn("May 26, 2021", html)
 
-    def test_nested_post_uses_the_custom_layout(self) -> None:
-        html = (
-            self.site_dir / "2021/05/26/time-for-a-change.html"
-        ).read_text(encoding="utf-8")
-
-        self.assertIn("Mike McCarty - Blog", html)
-        self.assertIn("Posted on: May 26, 2021", html)
-        self.assertIn('../../../assets/css/styles.css', html)
-        self.assertIn("G-94RENSJC31", html)
+    def test_blog_post_output_is_removed(self) -> None:
+        self.assertFalse(
+            (self.site_dir / "2021/05/26/time-for-a-change.html").exists()
+        )
 
     def test_rendered_html_contains_no_jekyll_syntax(self) -> None:
         for path in self.site_dir.rglob("*.html"):
