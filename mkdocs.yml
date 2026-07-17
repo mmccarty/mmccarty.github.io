@@ -11,11 +11,13 @@ strict: true
 theme:
   name: mkdocs
   custom_dir: overrides
+  language: en
 
 nav:
   - Home: index.md
   - About Me: about.md
-  - Blog: blog.md
+  - Blog:
+    - blog/index.md
   - Talks: talks.md
   - CV: https://github.com/mmccarty/cv/blob/master/mmccarty-cv.pdf
 
@@ -27,8 +29,8 @@ exclude_docs: |
   /superpowers/
 
 plugins:
-  - blog:
-      folder: blog
+  - search
+  - blog
 
 validation:
   nav:

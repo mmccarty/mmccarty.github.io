@@ -48,7 +48,7 @@ class SiteBuildTests(unittest.TestCase):
         expected_paths = [
             "index.html",
             "about.html",
-            "blog.html",
+            "blog/index.html",
             "talks.html",
             "cv.html",
             "work.html",
@@ -69,17 +69,34 @@ class SiteBuildTests(unittest.TestCase):
             "mikemccarty.io",
         )
 
+    def test_rendered_html_preserves_original_theme(self) -> None:
+        expected_pages = [
+            "index.html",
+            "blog/index.html",
+            "blog/2026/07/16/test-post.html",
+        ]
+
+        for relative_path in expected_pages:
+            html = (self.site_dir / relative_path).read_text(encoding="utf-8")
+            with self.subTest(path=relative_path):
+                self.assertIn('class="container"', html)
+                self.assertIn("assets/css/normalize.css", html)
+                self.assertIn("assets/css/skeleton.css", html)
+                self.assertIn("assets/css/styles.css", html)
+                self.assertNotIn('class="md-header', html)
+
     def test_blog_omits_the_removed_post(self) -> None:
-        html = (self.site_dir / "blog.html").read_text(encoding="utf-8")
+        html = (self.site_dir / "blog/index.html").read_text(encoding="utf-8")
 
         self.assertNotIn('href="2021/05/26/time-for-a-change.html"', html)
         self.assertNotIn("Time for a Change", html)
         self.assertNotIn("May 26, 2021", html)
 
     def test_blog_lists_the_test_post(self) -> None:
-        html = (self.site_dir / "blog.html").read_text(encoding="utf-8")
+        html = (self.site_dir / "blog/index.html").read_text(encoding="utf-8")
 
-        self.assertIn('href="blog/2026/07/16/test-post.html"', html)
+        self.assertIn('href="2026/07/16/test-post.html"', html)
+        self.assertEqual(html.count('href="2026/07/16/test-post.html"'), 1)
         self.assertIn("Test Post", html)
 
     def test_blog_post_output_is_removed(self) -> None:
@@ -93,6 +110,7 @@ class SiteBuildTests(unittest.TestCase):
 
         html = post_path.read_text(encoding="utf-8")
         self.assertIn("Test Post", html)
+        self.assertRegex(html, r"1\s+min(?:ute)?\s+read")
         self.assertIn(
             "This is a test post for verifying the MkDocs blog plugin.",
             html,
@@ -140,15 +158,24 @@ class ProjectConfigurationTests(unittest.TestCase):
                 self.assertIn(command, readme)
         self.assertIn("GitHub Actions", readme)
 
-    def test_blog_uses_mkdocs_blog_plugin(self) -> None:
+    def test_blog_uses_material_builtin_blog_plugin(self) -> None:
         mkdocs_config = (ROOT / "mkdocs.yml").read_text(encoding="utf-8")
         project_config = (ROOT / "pyproject.toml").read_text(encoding="utf-8")
 
-        self.assertIn("mkdocs-blog-plugin", project_config)
-        self.assertIn("- blog:", mkdocs_config)
+        self.assertIn("mkdocs-material", project_config)
+        self.assertNotIn("mkdocs-blog-plugin", project_config)
+        self.assertIn("name: mkdocs", mkdocs_config)
+        self.assertIn("custom_dir: overrides", mkdocs_config)
+        self.assertIn("- blog", mkdocs_config)
+        self.assertIn(
+            'blog = "material.plugins.blog.plugin:BlogPlugin"',
+            project_config,
+        )
+        self.assertNotIn("folder:", mkdocs_config)
         self.assertNotIn("hooks:", mkdocs_config)
         self.assertFalse((ROOT / "blog.py").exists())
-        self.assertTrue((ROOT / "docs/blog/.gitkeep").is_file())
+        self.assertTrue((ROOT / "docs/blog/index.md").is_file())
+        self.assertTrue((ROOT / "docs/blog/posts/test-post.md").is_file())
 
     def test_generated_outputs_are_not_tracked(self) -> None:
         result = subprocess.run(

@@ -1,66 +1,17 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Mike McCarty - {{ page.title }}</title>
-    <meta name="description" content="{{ config.site_description }}">
-    <meta name="author" content="{{ config.site_author }}">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+{% extends "site.html" %}
 
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="{{ base_url }}/assets/css/normalize.css">
-    <link rel="stylesheet" href="{{ base_url }}/assets/css/skeleton.css">
-    <link rel="stylesheet" href="{{ base_url }}/assets/css/styles.css">
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.11.2/css/all.min.css"
-      integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ="
-      crossorigin="anonymous"
-    >
+{% block site_heading %}
+  {% if page.meta.post %}
+    Mike McCarty - Blog
+  {% else %}
+    Mike McCarty
+  {% endif %}
+{% endblock %}
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id={{ config.extra.analytics_id }}"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', '{{ config.extra.analytics_id }}');
-    </script>
-  </head>
-  <body>
-    <div class="container">
-      <div class="row">
-        <div class="column" style="margin-top: 5%">
-          {% if page.meta.post %}
-            <h2>Mike McCarty - Blog</h2>
-          {% else %}
-            <h2>Mike McCarty</h2>
-          {% endif %}
-          <hr>
-        </div>
-      </div>
-      <div class="row">
-        <div class="two columns">
-          <nav>
-            {% for item in nav %}
-              <a href="{{ item.url|url }}"{% if item.active %} class="current"{% endif %}>{{ item.title }}</a><br>
-            {% endfor %}
-            <hr>
-            <div class="center">
-              <a href="{{ config.extra.social.email }}" aria-label="Email"><i class="fas fa-envelope"></i></a>
-              <a href="{{ config.extra.social.github }}" aria-label="GitHub"><i class="fab fa-github"></i></a>
-              <a href="{{ config.extra.social.twitter }}" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-              <a href="{{ config.extra.social.linkedin }}" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            </div>
-          </nav>
-        </div>
-        <main class="ten columns">
-          {% if page.meta.post %}
-            <h2>{{ page.title }}</h2>
-            <p class="article-date">Posted on: {{ page.meta.formatted_date }}</p>
-          {% endif %}
-          {{ page.content }}
-        </main>
-      </div>
-    </div>
-  </body>
-</html>
+{% block content %}
+  {% if page.meta.post %}
+    <h2>{{ page.title }}</h2>
+    <p class="article-date">Posted on: {{ page.meta.formatted_date }}</p>
+  {% endif %}
+  {{ page.content }}
+{% endblock %}

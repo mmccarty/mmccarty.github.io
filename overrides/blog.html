@@ -1,0 +1,22 @@
+{% extends "site.html" %}
+
+{% block site_heading %}Mike McCarty - Blog{% endblock %}
+
+{% block content %}
+  {{ page.content }}
+  {% for post in posts %}
+    <hr/>
+    <article class="blog-post-preview">
+      <p class="article-date">
+        Posted on: {{ post.config.date.created|date }}
+        {% if post.config.readtime %}
+          &middot; {{ post.config.readtime }} min read
+        {% endif %}
+      </p>
+      {{ post.content }}
+      {% if post.more %}
+        <p><a href="{{ post.url|url }}">Continue reading</a></p>
+      {% endif %}
+    </article>
+  {% endfor %}
+{% endblock %}

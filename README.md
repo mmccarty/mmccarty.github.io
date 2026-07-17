@@ -31,18 +31,20 @@ The generated site is written to `site/` and is not committed.
 Pages and static assets live in `docs/`. The custom template that preserves the
 site's original appearance lives in `overrides/main.html`.
 
-Blog posts are managed by `mkdocs-blog-plugin`. Add posts under dated paths in
-`docs/blog/`, for example:
+Blog posts are managed by Material for MkDocs' built-in blog plugin. Add posts
+under `docs/blog/posts/`, for example:
 
 ```text
-docs/blog/2026/07/16/post-title.md
+docs/blog/posts/post-title.md
 ```
 
-Each post should include at least a title:
+Each post should include at least a title and creation date:
 
 ```yaml
 ---
 title: Post title
+date:
+  created: 2026-07-16
 ---
 ```
 
