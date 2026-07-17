@@ -1,0 +1,8 @@
+{% macro t(key) -%}
+  {%- set translations = {
+    "blog.archive": "Archive",
+    "blog.categories": "Categories",
+    "blog.authors": "Authors"
+  } -%}
+  {{- translations.get(key, key) -}}
+{%- endmacro %}

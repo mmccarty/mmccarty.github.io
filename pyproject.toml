@@ -1,0 +1,19 @@
+[build-system]
+requires = ["hatchling>=1.26"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mikemccarty-site"
+version = "0.1.0"
+description = "Source for mikemccarty.io"
+requires-python = ">=3.12"
+dependencies = [
+    "mkdocs>=1.6.1,<2",
+    "mkdocs-material>=9.6,<10",
+]
+
+[project.entry-points."mkdocs.plugins"]
+blog = "material.plugins.blog.plugin:BlogPlugin"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/mikemccarty_site"]

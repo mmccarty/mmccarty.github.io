@@ -1,0 +1,17 @@
+{% extends "site.html" %}
+
+{% block site_heading %}
+  {% if page.meta.post %}
+    Mike McCarty - Blog
+  {% else %}
+    Mike McCarty
+  {% endif %}
+{% endblock %}
+
+{% block content %}
+  {% if page.meta.post %}
+    <h2>{{ page.title }}</h2>
+    <p class="article-date">Posted on: {{ page.meta.formatted_date }}</p>
+  {% endif %}
+  {{ page.content }}
+{% endblock %}

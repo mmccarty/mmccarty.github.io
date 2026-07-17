@@ -1,0 +1,7 @@
+{% for item in nav %}
+  {% set item_url = item.url if item.url is defined else "" %}
+  {% if not item_url and item.children %}
+    {% set item_url = item.children[0].url %}
+  {% endif %}
+  <a href="{{ item_url|url }}"{% if item.active %} class="current"{% endif %}>{{ item.title }}</a><br>
+{% endfor %}

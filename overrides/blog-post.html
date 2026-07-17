@@ -1,0 +1,14 @@
+{% extends "site.html" %}
+
+{% block site_heading %}Mike McCarty - Blog{% endblock %}
+
+{% block content %}
+  <h2>{{ page.title }}</h2>
+  <p class="article-date">
+    Posted on: {{ page.config.date.created|date }}
+    {% if page.config.readtime %}
+      &middot; {{ page.config.readtime }} min read
+    {% endif %}
+  </p>
+  {{ page.content }}
+{% endblock %}
