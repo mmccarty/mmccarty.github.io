@@ -6,13 +6,6 @@ title: About Me
   <img src='assets/images/mike.jpg' align="right" hspace='10' style="width:40%; height:40%"/>
 </p>
 
-## Origin
-
-I was raised in Kentucky by a two amazing parents along with three brothers
-and two sisters. All of my siblings were older and many even had families of
-their own, which meant that I was fortunate to have grown up in a large family,
-and as the cool uncle.
-
 ## Academic and Early Career
 I attended university at Morehead State University in the department of Math
 and Physics where I received a dual degree in Computer Science and Physics.
@@ -27,7 +20,7 @@ located at Oak Ridge National Lab. During my time at NICS, I worked in the High
 Performance Computing Operations group which ran the National Science
 Foundation’s first petaflop supercomputing system (the Kraken).
 
-In 2013 began working in the private industry focusing on web / mobile
+After my time at the observatory, I began working in the private industry focusing on web / mobile
 application development, data analysis pipelines, large data business
 intelligence applications, and open source / enterprise data science tools and
 platforms.
@@ -41,3 +34,7 @@ open source software projects such as [Dask](https://www.dask.org),
 [RAPIDS](https://www.rapids.ai), and [XGBoost](https://xgboost.readthedocs.io/). We also
 open sourced one of the tools, [Rubicon
 ML](https://capitalone.github.io/rubicon-ml/).
+
+I currently work at NVIDIA on building accelerated data science and machine learning libraries. My teams 
+are focused on Devops, Build Engineering, Enterprise Distribution and Deployment for NVIDIA CUDA Libraries 
+like cuDF, cuML, and cuVS. 
