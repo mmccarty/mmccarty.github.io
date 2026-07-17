@@ -145,6 +145,7 @@ class ProjectConfigurationTests(unittest.TestCase):
         for fragment in expected_fragments:
             with self.subTest(fragment=fragment):
                 self.assertIn(fragment, workflow)
+        self.assertRegex(workflow, r"astral-sh/setup-uv@v\d+\.\d+\.\d+")
 
     def test_readme_documents_the_uv_workflow(self) -> None:
         readme = (ROOT / "README.md").read_text(encoding="utf-8")
